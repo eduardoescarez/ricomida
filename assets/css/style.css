@@ -1,0 +1,20 @@
+.introduccion{
+  margin-top: 2rem;
+}
+
+.listado-menu{
+  margin-top: 2rem;
+}
+
+h1{
+  text-transform: uppercase;
+}
+
+h4{
+  text-transform: uppercase;
+}
+
+hr{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
