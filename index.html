@@ -5,7 +5,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.js"></script>
+	<script>
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+	})
+	</script>
 	<link href="assets/css/style.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +58,7 @@
       	<h1>Pizza al estilo Chicago con espinacas y champiñones</h1>
 				<hr>
 				<h4>110 min / 6 a 8 porciones</h4>
-				<p class="">Enviar por correo  Añadir a favoritos</p>
+				<p><a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Presiona para enviar por correo">Enviar por correo</a> <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Agregar esta receta a tus favoritos">Añadir a favoritos</a></p>		
 				</div>
 
 				</div>
@@ -60,7 +66,7 @@
 		</div>
 	</div>
 
-<div class="carrusel d-none d-md-block">
+<div class="carrusel d-none d-sm-block d-xs-block">
 	<div id="carruselfotos" class="carousel carousel-dark slide" data-bs-ride="carousel">
 
 	  	<div class="carousel-inner">
@@ -211,5 +217,12 @@
 		<p>Ricomida</p>
 		</div>
 	</footer>
+
+	<script>
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		return new bootstrap.Tooltip(tooltipTriggerEl)
+	})
+	</script>
 </body>
 </html>
