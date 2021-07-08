@@ -22,7 +22,25 @@ h1{
   text-transform: uppercase;
 }
 
-h4{
+.tarjeta{
+  margin-top: 1rem;
+}
+.cabecerarecetas{
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.recetas-rel{
+  margin-bottom: 3rem;
+}
+
+.empezar{
+  margin-top: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+h5{
   text-transform: uppercase;
 }
 
